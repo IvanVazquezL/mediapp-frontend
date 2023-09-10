@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginComponent } from './pages/login/login.component';
 import { PatientComponent } from './pages/patient/patient.component';
+import { MaterialModule } from './material/material.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { PatientComponent } from './pages/patient/patient.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
