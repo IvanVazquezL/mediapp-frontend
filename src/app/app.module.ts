@@ -7,12 +7,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginComponent } from './pages/login/login.component';
 import { PatientComponent } from './pages/patient/patient.component';
 import { MaterialModule } from './material/material.module';
+import { MedicComponent } from './pages/medic/medic.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    PatientComponent
+    PatientComponent,
+    MedicComponent
   ],
   imports: [
     BrowserModule,

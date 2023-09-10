@@ -28,9 +28,17 @@
 }
 
 .myButton:focus{
-    box-shadow: 0 0 rgba(255, 255, 255, 1) !important;
+    box-shadow: #3F51B5 !important;
     transition:none !important;
-    background-color: rgba(255, 255, 255, 1) !important;
-    -webkit-tap-highlight-color:rgba(255, 255, 255, 1) !important;
+    background-color: #3F51B5 !important;
+    -webkit-tap-highlight-color:#3F51B5 !important;
+}
+
+mat-sidenav {
+    background-color: #495ccb;
+}
+
+mat-sidenav span {
+    color: white;
 }
 
