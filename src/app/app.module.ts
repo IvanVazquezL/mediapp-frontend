@@ -8,6 +8,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { PatientComponent } from './pages/patient/patient.component';
 import { MaterialModule } from './material/material.module';
 import { MedicComponent } from './pages/medic/medic.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { MedicComponent } from './pages/medic/medic.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
