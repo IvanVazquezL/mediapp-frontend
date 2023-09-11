@@ -25,6 +25,11 @@ export class PatientComponent implements OnInit{
       this.patientService.findAll().subscribe(data => {
         this.dataSource = new MatTableDataSource(data);
         this.dataSource.sort = this.sort;
+        this.dataSource.paginator = this.paginator;
       });
+  }
+
+  applyFilter(event: any): void {
+    this.dataSource.filter = event.target.value.trim();
   }
 }

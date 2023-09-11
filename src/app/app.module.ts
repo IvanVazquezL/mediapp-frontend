@@ -9,13 +9,15 @@ import { PatientComponent } from './pages/patient/patient.component';
 import { MaterialModule } from './material/material.module';
 import { MedicComponent } from './pages/medic/medic.component';
 import { HttpClientModule } from '@angular/common/http';
+import { PatientEditComponent } from './pages/patient/patient-edit/patient-edit.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     PatientComponent,
-    MedicComponent
+    MedicComponent,
+    PatientEditComponent
   ],
   imports: [
     BrowserModule,

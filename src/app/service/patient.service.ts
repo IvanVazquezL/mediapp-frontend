@@ -18,4 +18,20 @@ export class PatientService {
   findAll(): Observable<Patient[]> {
     return this.http.get<Patient[]>(this.url);
   }
+
+  findById(id: String): Observable<Patient> {
+    return this.http.get<Patient>(`${this.url}/${id}`);
+  }
+
+  save(patient: Patient) {
+    return this.http.post(this.url, patient);
+  }
+
+  update(id: number, patient: Patient) {
+    return this.http.put(`${this.url}/${id}`, patient);
+  }
+
+  delete(id: number) {
+    return this.http.delete(`${this.url}/${id}`);
+  }
 }
