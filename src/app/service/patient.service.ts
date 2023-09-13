@@ -19,7 +19,7 @@ export class PatientService {
     return this.http.get<Patient[]>(this.url);
   }
 
-  findById(id: String): Observable<Patient> {
+  findById(id: number): Observable<Patient> {
     return this.http.get<Patient>(`${this.url}/${id}`);
   }
 

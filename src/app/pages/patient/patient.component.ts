@@ -32,4 +32,10 @@ export class PatientComponent implements OnInit{
   applyFilter(event: any): void {
     this.dataSource.filter = event.target.value.trim();
   }
+
+  deletePatient(id: number) {
+    this.patientService.delete(id).subscribe(data => {
+      console.log('Deleted')
+    });
+  }
 }

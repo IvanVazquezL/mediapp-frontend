@@ -10,6 +10,7 @@ import { MaterialModule } from './material/material.module';
 import { MedicComponent } from './pages/medic/medic.component';
 import { HttpClientModule } from '@angular/common/http';
 import { PatientEditComponent } from './pages/patient/patient-edit/patient-edit.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { PatientEditComponent } from './pages/patient/patient-edit/patient-edit.
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
